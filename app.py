@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_ngrok import run_with_ngrok
 import pandas
 import tensorflow as tf
 import numpy as np
@@ -61,4 +60,4 @@ def upload():
 
 # run the web server
 if __name__=='__main__':
-	app.run()
+	app.run(debug=False,host='0.0.0.0')
